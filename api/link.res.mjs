@@ -10,6 +10,7 @@ var client = Core__Option.map(process.env.HUB_URL, (function (prim) {
 var FrameRequest = {};
 
 async function handler(req, res) {
+  console.log("req: ", req);
   var match = req.method;
   if (match === "POST") {
     console.log(req.query);

@@ -13,6 +13,7 @@ module FrameRequest = {
 }
 
 let handler = async (req: FrameRequest.t, res: Response.t) => {
+  Console.log2("req: ", req)
   switch req->Request.method {
   | #POST => Console.log(req->FrameRequest.query)
   | _ => res->Response.headers->Headers.set("Allow", "POST")
