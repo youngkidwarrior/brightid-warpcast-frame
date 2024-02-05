@@ -1,0 +1,32 @@
+{
+  "name": "brightid-warpcast-frame",
+  "sources": [
+    {
+      "dir": "src",
+      "subdirs": true
+    },
+    {
+      "dir": "api",
+      "subdirs": true
+    }
+  ],
+  "package-specs": [
+    {
+      "module": "es6",
+      "in-source": true
+    }
+  ],
+  "suffix": ".res.mjs",
+  "bs-dependencies": [
+    "@rescript/core",
+    "@rescript/react",
+    "@glennsl/rescript-fetch"
+  ],
+  "bsc-flags": [
+    "-open RescriptCore",
+    "-open Fetch"
+  ],
+  "jsx": {
+    "version": 4
+  }
+}
